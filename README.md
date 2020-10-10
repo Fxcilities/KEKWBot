@@ -2,7 +2,7 @@
 
 ### Spam upload **KEKW** emojis!
 
-### [Server Link with emojis uploaded](https://discord.gg/kdPhFQn)
+### [Server Link with emojis uploaded](https://discord.gg/ntJnqKG)
 
 
 # Installation
