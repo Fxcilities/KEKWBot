@@ -12,7 +12,7 @@ class help(commands.Cog):
     async def help(self, ctx):
     
         embed = discord.Embed(
-          title="Bois Help", 
+          title="KEKW Bot Help", 
           description="_ _\nThank you for inviting KEKW bot!\nCheck out our other bot, [Essentials](https://essentialsbot.xyz)\n_ _", 
           color=discord.Color.dark_gold()
         )
