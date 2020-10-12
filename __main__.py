@@ -25,7 +25,7 @@ async def start(ctx, amount: int = 50):
       await ctx.guild.create_custom_emoji(name=f"kekw{cur}", image=res)
       cur += 1
   await msg.edit(embed=em2)
-  print(f"Uploaded: {amount} kekw emojis to {ctx.guild.name}")
+  print(f"Uploaded: `{amount}` kekw emojis to {ctx.guild.name}")
 
 @bot.event
 async def on_ready():
