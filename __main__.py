@@ -6,14 +6,14 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-token = os.environ["token"]
-prefix = os.environ["prefix"]
+token = os.getenv("token")
+prefix = os.getenv("prefix")
 
 bot = commands.Bot(command_prefix=prefix)
 
 
 @bot.command()
-@commands.is_owner()
+@commands.has_permission(manage_server=True)  
 async def start(ctx, amount: int = 50):
   em1 = discord.Embed(title="Starting...", color=discord.Color.blue(), description=f"I will start uploading **{amount}** kekw emojis!")
   em2 = discord.Embed(title="Finished", color=discord.Color.green())
@@ -29,6 +29,7 @@ async def start(ctx, amount: int = 50):
 
 @bot.event
 async def on_ready():
+  bot.change_presence(status=discord.Status.online, activity=discord.Activity(name="kekw's laugh",type=discord.ActivityType.watching))
   print(f"Bot ready, logged in as {bot.user} ({bot.user.id})")
 
 bot.run(token)
