@@ -10,6 +10,7 @@ token = os.getenv("token")
 prefix = os.getenv("prefix")
 
 bot = commands.Bot(command_prefix=prefix)
+bot.remove_command('help')
 
 
 @bot.command()
@@ -32,4 +33,5 @@ async def on_ready():
   bot.change_presence(status=discord.Status.online, activity=discord.Activity(name="kekw's laugh",type=discord.ActivityType.watching))
   print(f"Bot ready, logged in as {bot.user} ({bot.user.id})")
 
+bot.load_extension('help')
 bot.run(token)
