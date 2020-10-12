@@ -10,6 +10,7 @@ token = os.environ["token"]
 prefix = os.environ["prefix"]
 
 bot = commands.Bot(command_prefix=prefix)
+bot.remove_command('help')
 
 
 @bot.command()
@@ -31,4 +32,5 @@ async def start(ctx, amount: int = 50):
 async def on_ready():
   print(f"Bot ready, logged in as {bot.user} ({bot.user.id})")
 
+bot.load_extension('help')
 bot.run(token)
