@@ -13,10 +13,10 @@ class help(commands.Cog):
     
         embed = discord.Embed(
           title="KEKW Bot Help", 
-          description="_ _\nThank you for inviting KEKW bot!\nCheck out our other bot, [Essentials](https://essentialsbot.xyz)\n_ _", 
+          description="_ _\nThank you for inviting KEKW bot!\nCheck out our other bot, [Essentials](https://essentialsbot.xyz)\n\n[Setup the bot](https://github.com/Fxcilities/KEKWBot/blob/main/README.md)", 
           color=discord.Color.dark_gold()
         )
-        embed.add_field(name="Main commands:", value="**```kekw!start (amount, defaults to 50)```**", inline=False)
+        embed.add_field(name="Main commands:", value="**```kekw!start (amount, defaults to 50)```**\n**```kekw!emojis```**", inline=False)
         embed.set_footer(text="Requested by: " + str(ctx.author), icon_url=str(ctx.author.avatar_url))
         await ctx.message.delete()
         await ctx.send(embed=embed, delete_after=30)
