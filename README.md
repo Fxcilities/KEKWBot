@@ -28,6 +28,11 @@ Upload 50 KEKW's
 kekw!start 50
 ``` 
 
+For more commands
+```
+kekw!help
+```
+
 
 **Default Prefix: `kekw!`**
 
@@ -35,5 +40,10 @@ kekw!start 50
 ```
 python3 __main__.py
 ```
+
+### Contributors for this weird bot
+- [Fxcilities](https://github.com/Fxcilities)
+- [Mrmagicpie](https://github.com/Mrmagicpie)
+- [editid](https://github.com/editid0)
 
 ![KEKW GO BRRRRRRR](https://cdn.discordapp.com/emojis/764125562847232040.png?v=1)
